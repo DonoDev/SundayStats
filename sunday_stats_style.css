@@ -1,5 +1,6 @@
+/*header code*/
 header {
-	background-color: black;
+	background-color: #0000FF;
 	position: fixed;
 	width: 100%;
 	height: 5em;
@@ -9,27 +10,71 @@ header {
 	z-index: 900;
 }
 
+h1 {
+	font-size: 3em;
+	color: white;
+}
+/*end header code*/
+
+/* nav bar code*/
 nav {
-	background-color: lightgreen;
 	position: fixed;
-	width: 100%;
-	height: 2em;
+	width: 422px;
+	margin: auto;
+	left: 0%;
+	right: 0%;
 	top: 0;
-	left: 0;
 	margin-top: 5em;
-	text-align: center;
 	z-index: 800;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	text-align: center;
+}
+
+nav li {
+    float: left;
+	border-right: 1px solid #bbb;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #FF0000;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+.active{
+	background-color: #111;
+	color: white;
+}
+/*End nav bar*/
+
 body {
-	background-color: beige;
-	margin-top: 7em;
+	background-color: #FFFFFF;
+	margin-top: 9em;
 	top: 0;
 	z-index: 700;
 }
 
 footer{
-	background-color: lightgreen;
+	background-color: #FFFFFF;
 	position: fixed;
 	width: 100%;
 	height: 3em;
@@ -37,13 +82,4 @@ footer{
 	left: 0;
 	text-align: center;
 	z-index: 800;
-}
-
-h1 {
-	font-size: 3em;
-	color: white;
-}
-
-.active{
-	background-color: #4CAF50;
 }
